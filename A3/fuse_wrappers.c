@@ -13,6 +13,8 @@
 #include "disk_emu.h"
 #include "sfs_api.h"
 
+#define MAXFILENAME 20
+
 static int fuse_getattr(const char *path, struct stat *stbuf)
 {
     int res = 0;

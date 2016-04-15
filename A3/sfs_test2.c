@@ -376,7 +376,7 @@ main(int argc, char **argv)
   }
 
   printf("Directory listing\n");
-  char *filename = (char *)malloc(name_limit);
+  char *filename = (char *)malloc(20);
   int max = 0;
   while (sfs_get_next_filename(filename)) {
 	  if (strcmp(filename, names[max]) != 0) {
